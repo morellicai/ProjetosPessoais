@@ -1,0 +1,118 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* Header */
+.header{
+    padding: 20px 0 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0px 0px 12px;
+}
+.header.hidden{
+    transform: translateY(-100%);
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.logo{
+    display: block;
+    
+}
+.text-header{
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+    
+}
+.listnav {
+    text-decoration: none;
+    color: black;
+}
+.listnav:hover{
+    opacity: 60%;
+}
+.orcamento{
+    padding: 20px;
+    background-color: rgb(9, 9, 164);
+    color: #eee;
+    text-decoration: none;
+    box-shadow: 0px 0px 6px 0px black;
+    border-radius: 30px;
+}
+.orcamento:hover{
+    box-shadow: inset 0px 0px 10px 0px black;
+}
+/* Main */
+.devs{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 100px;
+    text-align: center;
+    padding-top: 150px;
+}
+.devins{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 30px;
+    padding: 50px 50px 0 50px;
+}
+.img-dev{
+    width: 100%;
+    height: 400px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    transition: filter 300ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px;
+    filter: grayscale(100%) brightness(80%);
+}
+.img-dev:hover{
+    filter: grayscale(0%)
+}
+.descricao-dev{
+    width: 100%;
+    margin: 30px 0;
+    background-color: #dcdbdb;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.valor-dev{
+    color: rgb(9, 9, 164);
+}
+/* Footer */
