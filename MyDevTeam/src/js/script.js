@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 
     lastScrollTop = scrollTop;
 });
-
+// Botão de Orçamento
 let button = document.getElementById("orcamento");
 button.addEventListener("click", () => {
     button.style.backgroundColor = "black";
