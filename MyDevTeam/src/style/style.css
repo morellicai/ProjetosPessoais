@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-size: 14px;
 }
+html{
+    background-color: black;
+}
 body {
     background-image: url(../img/rahul-mishra-XXMA-8fBB-g-unsplash.jpg);
     background-size: cover;
@@ -15,7 +18,7 @@ body {
 /* Header */
 .header{
     padding: 20px 0 50px 0;
-    background-color: #eeeeee;
+    background: linear-gradient(90deg, #1a1a1a, #01053e);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -29,10 +32,10 @@ body {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0 50px;
-    border-radius: 20px;
-
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 2px solid #4db8ff;
 }
 .header.hidden{
     transform: translateY(-100%);
@@ -44,91 +47,139 @@ body {
 }
 .logo{
     display: block;
-    
+    box-shadow: 0px 0px 0xpx;
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0px 0px 8px rgb(60, 60, 60));
 }
 .text-header{
     text-align: center;
     mix-blend-mode: multiply;
 }
-ul{
+.nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 70px;
     list-style: none;
-    
 }
 .listnav {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 .listnav:hover{
-    opacity: 60%;
+    color: #4db8ff;
 }
 .orcamento{
-    padding: 20px;
-    background-color: rgb(9, 9, 164);
-    color: #eee;
+    padding: 15px;
+    background-color: #4db8ff;
+    color: black;
     text-decoration: none;
-    box-shadow: 0px 0px 6px 0px black;
-    border-radius: 30px;
+    box-shadow: 0px 0px 6px 0px rgb(131, 131, 131);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
 }
 .orcamento:hover{
+    background-color: #3399cc;
     box-shadow: inset 0px 0px 10px 0px black;
 }
 /* Hero */
 .hero{
-    padding: 45vh 100px;
+    padding: 38vh 100px;
     background-size: cover;
     background-position: center;
     color: #eee;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+}
+.linha{
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
 }
 .hero-text{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    /* border: 2px solid #eee; */
-    width: 800px;
-    text-align: end;
+    width: 500px;
+    text-align: start;
+    gap: 20px;
 }
 .hero-title{
-    font-size: 3.6rem;
+    height: 100px;
+    filter: drop-shadow(0px 0px 8px rgb(60, 60, 60));
+}
+.text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.conheca{
+    border: solid 2px #4db8ff;
+    color: #eee;
+    text-decoration: none;
+    box-shadow: 0px 0px 6px 0px rgb(131, 131, 131);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: auto;
+    transition: background-color 0.3s ease;
+}
+.conheca:hover{
+    background-color: #3399cc;
+    box-shadow: inset 0px 0px 10px 0px black;
 }
 /* Main */
 main{
-    padding: 100px 250px;
+    /* padding: 100px 100px; */
     gap: 100px;
-    background-image: url(../img/45473.png);
+    background-image: url(../img/rahul-mishra-JPL5eIpYugo-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 10px;
+    border-radius: 30px;
+    border-top: 2px solid #4db8ff;
+    display: flex;
+    flex-direction: column;
 }
 .main{
-    padding: 10px;
+    margin: 100px 100px 0px 100px;
     border-radius: 30px;
     background-color: #eee;
     box-shadow: 0px 0px 10px;
+    background: radial-gradient(circle at top left, #0a2e5a, #121212);
+    max-width: 2000px;
+    min-width: 1000px;
 }
 .sobreNos{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    margin: 80px 30px;
     gap: 50px;
-    text-align: center;
-    color: #000000;
+    color: #eee;
     width: 50%;
-    margin: 60px auto;
+    margin: 250px auto;
+    text-align: center;
 }
 .sobreNos-title{
     font-size: 4rem;
+    width: auto;
 }
 .sobreNos-text{
-    font-size: 1.3rem;
+    font-size: 2rem;
+}
+.box-serv{
+    margin: 100px 100px 0px 100px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px;
+    padding: 50px 0;
+    background: radial-gradient(circle at top left, #0a2e5a, #121212);
 }
 .servicos{
     display: flex;
@@ -136,75 +187,199 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 80px 30px;
+    margin: 0px 30px;
     gap: 50px;
     text-align: center;
+    color: #eee;
 }
 .servicos-title{
     font-size: 4rem;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 .servicos-text{
     font-size: 1.3rem;
     width: 50%;
 }
-.serv-metodo{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
 .servicos-list{
+    list-style-type: none;
+    padding: 0;
+    gap: 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items:flex-start;
-}
-.titles{
-    display: flex;
-    gap: 350px;
-}
-.title-serv{
-    font-size: 2rem;
-}
-.title-tec{
-    font-size: 2rem;
-}
-.tecnologias{
-    width: 300px;
+    align-items: flex-start;
 }
 .list-services{
-    font-size: 1.2rem;
+    border: solid 2px #4db8ff;
+    color: #eee;
+    text-decoration: none;
+    box-shadow: 0px 0px 6px 0px rgb(131, 131, 131);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
-.devs-title{
-    font-size: 4rem;
-    text-align: center;
+.list-services:hover{
+    background-color: #3399cc;
+    box-shadow: inset 0px 0px 10px 0px black;
 }
-.devs{
+.linha2{
+    width: 1px;
+    height: 500px;
+    background-color: #eee;
+}
+.action{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center
+}
+.cards-serv{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    margin: 80px 30px;
-    gap: 80px;
+    align-items: center;
+    gap: 50px;
     text-align: center;
+    color: #eee;
 }
-.devins{
+#card-web{
+    display: none;
+}
+#card-suporte{
+    display: none;
+}
+#card-design{
+    display: none;
+}
+#card-ecommerce{
+    display: none;
+}
+#card-mobile{
+    display: none;
+}
+#card-desktop{
+    display: block;
+}
+#card-gestao{
+    display: none;
+}
+.cards-unic{
+    width: 450px;
+    max-width: 450px;
+    min-width: 450px;
+    max-height: 550px;
+    min-height: 550px;
+    background: linear-gradient(90deg, #1a1734, #19013e);
+    height: auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 50px;
+}
+.cards-serv-title{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    width: auto;
+    padding: 50px;
+    text-align: center;
+}
+.list-icons{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 400px;
-    height: 580px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.devs{
+    margin: 100px 100px 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px;
+    padding: 50px 0;
+    background: radial-gradient(circle at top left, #0a2e5a, #121212);
+}
+#card-eddie{
+    display: flex;
+}
+#card-felipe{
+    display: none;
+}
+#card-elias{
+    display: none;
+}
+#card-dmitri{
+    display: none;
+}
+#card-pedro{
+    display: none;
+}
+#card-caio{
+    display: none;
+}
+.devs-title{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    width: auto;
+    padding: 30px 50px;
+    text-align: center;
+    color: #eee;
+}
+.equipe{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+}
+.devins{
+    max-width: 500px;
+    max-height: 750px;
+    min-width: 500px;
+    min-height: 750px;
     box-shadow: 0px 0px 10px;
     border-radius: 30px;
     padding: 50px 50px 50px 50px;
+    background: linear-gradient(90deg, #1a1734, #19013e);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-in{
+    width: 300px;
+    height: 300px;
 }
 .img{
     width: 100px;
     height: 100px;
+    filter: grayscale(100%) brightness(80%);
+    transition: 0.3 ease;
+    margin: 20px;
+}
+.img:hover{
+    filter: grayscale(0%)
 }
 .img-dev{
     width: 100%;
@@ -215,23 +390,36 @@ main{
     transition: filter 300ms;
     cursor: pointer;
     box-shadow: 0px 0px 5px;
-    filter: grayscale(100%) brightness(80%);
-}
-.img-dev:hover{
-    filter: grayscale(0%)
 }
 .descricao-dev{
     width: 100%;
-    margin: 30px 0;
-    background-color: #dcdbdb;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #172f34, #19013e);
     padding: 20px;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px 0px;
-    height: 150px;
-    display: flex;
-    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    color: #eee;
 }
-.valor-dev{
-    color: rgb(9, 9, 164);
+.nome-dev{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #eee;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eee;
+}
+.form{ 
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: stretch;
 }
 /* Footer */
