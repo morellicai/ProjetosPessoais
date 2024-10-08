@@ -21,10 +21,6 @@ button.addEventListener("click", () => {
 })
 
 // Serviços
-const buttonServicos = document.getElementById("servicos");
-buttonServicos.addEventListener("click", () => {
-    const card = document.getElementById("card");
-})
 
 function card(event, type) {
     event.preventDefault();
@@ -76,6 +72,6 @@ document.querySelectorAll('a[data-type]').forEach(button => {
     button.addEventListener('click', function(event) {
         const type = this.getAttribute('data-type');
         console.log('Clique detectado no botão com tipo: ' + type);
-        card(event, type);
+        devs(event, type);
     });
 });

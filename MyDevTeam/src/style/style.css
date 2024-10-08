@@ -8,13 +8,6 @@
 html{
     background-color: black;
 }
-body {
-    background-image: url(../img/rahul-mishra-XXMA-8fBB-g-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 /* Header */
 .header{
     padding: 20px 0 50px 0;
@@ -93,6 +86,11 @@ body {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    background-image: url(../img/rahul-mishra-XXMA-8fBB-g-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .linha{
     width: 100%;
@@ -138,6 +136,7 @@ main{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /* background: radial-gradient(circle at top left, #0a2e5a, #121212); */
     box-shadow: 0px 0px 10px;
     border-radius: 30px;
     border-top: 2px solid #4db8ff;
