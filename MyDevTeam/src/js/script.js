@@ -68,7 +68,7 @@ function devs(event, type){
 }
 
 // Adicionando os event listeners de forma genérica
-document.querySelectorAll('a[data-type]').forEach(button => {
+document.querySelectorAll('.desenvolvedor').forEach(button => {
     button.addEventListener('click', function(event) {
         const type = this.getAttribute('data-type');
         console.log('Clique detectado no botão com tipo: ' + type);
