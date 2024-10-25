@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style/style.css">
+    <script defer src="src/js/script.js"></script>
     <title>My Team</title>
 </head>
 <body>
@@ -15,17 +16,17 @@
                     <li><a href="" class="listnav">Home</a></li>
                     <li><a href="#sobre-nos" class="listnav">Sobre nós</a></li>
                     <li><a href="#serv" class="listnav">Serviços</a></li>
-                    <li><a href="#portifolio" class="listnav">Portfolio</a></li>
+                    <li><a href="#portfolio" class="listnav">Portfolio</a></li>
                     <li><a href="#equipe" class="listnav">Equipe</a></li>
                     <li><a href="#contato" class="listnav">Contato</a></li>
                 </ul>
             </nav>
-            <a href="" id="orcamento" class="orcamento">SOLICITE UM ORÇAMENTO</a>
+            <a href="#form" id="orcamento" class="orcamento">SOLICITE UM ORÇAMENTO</a>
         </div>
     </header>
-
+    
     <section class="hero">
-        <div class="hero-text">
+        <div class="hero-text" id="hero-text">
             <img src="src/img/lovo-DevTeam-removebg-preview.png" class="hero-title">
             <div class="linha"></div>
             <h3 class="text">Conheça nossa equipe e veja como podemos ajudar a transformar seu projeto em realidade</h3>
@@ -62,24 +63,24 @@
                                 </li>
                             </ul>
                         </div>
-                </article>
-                <article class="cards-serv" id="card-desktop">
-                    <div class="cards-unic">
-                        <h3 class="cards-serv-title">Desenvolvimento Desktop</h3>
-                        <p class="cards-serv-text">Criamos soluções personalizadas em software, desenvolvendo aplicativos e sistemas sob medida para atender às necessidades específicas do seu negócio, garantindo eficiência e automação de processos.</p>
-                        <div class="icons">
-                            <ul class="list-icons">
-                                <li><img src="src/img/icons/nodejs-line.svg" alt="NodeJS" height= "44px"></li>
-                                <li><img src="src/img/icons/java-fill.svg" alt="Java" height= "44px"></li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mysql" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4db8ff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3" /><path d="M9 7h.01" /></svg>
-                                </li>
-                            </ul>
+                    </article>
+                    <article class="cards-serv" id="card-desktop">
+                        <div class="cards-unic">
+                            <h3 class="cards-serv-title">Desenvolvimento Desktop</h3>
+                            <p class="cards-serv-text">Criamos soluções personalizadas em software, desenvolvendo aplicativos e sistemas sob medida para atender às necessidades específicas do seu negócio, garantindo eficiência e automação de processos.</p>
+                            <div class="icons">
+                                <ul class="list-icons">
+                                    <li><img src="src/img/icons/nodejs-line.svg" alt="NodeJS" height= "44px"></li>
+                                    <li><img src="src/img/icons/java-fill.svg" alt="Java" height= "44px"></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mysql" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4db8ff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3" /><path d="M9 7h.01" /></svg>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="cards-serv" id="card-mobile">
-                    <div class="cards-unic">
+                    </article>
+                    <article class="cards-serv" id="card-mobile">
+                        <div class="cards-unic">
                         <h3 class="cards-serv-title">Desenvolvimento Mobilie</h3>
                         <p class="cards-serv-text">Oferecemos o desenvolvimento de aplicativos móveis para Android e iOS, com foco em interfaces intuitivas e funcionalidades que proporcionam a melhor experiência para os usuários.</p>
                         <div class="icons">
@@ -237,20 +238,69 @@
         </section>
         <section class="main" id="contato">
             <article class="contact-container">
-                <h2 class="contato-title">Contato</h2>
-                <form class="form" action="">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="mensagem">Mensagem:</label>
+                <form class="form" action="" id="form">
+                    <div class="first-line">
+                        <div class="first-in">
+                            <label for="nome" class="nome">Nome:</label>
+                            <input type="text" class="forms" id="nome" name="nome" required>
+                        </div>
+                        <div class="first-in">
+                            <label for="email" class="email">Email:</label>
+                            <input type="email" class="forms" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="sec-line">
+                        <div class="first-in">
+                            <label for="empresa">Empresa:</label>
+                            <input type="text" class="forms" id="empresa" name="empresa" required>
+                        </div>
+                        <div class="first-in">
+                            <label for="cargo">Cargo:</label>
+                            <input type="text" class="forms" id="cargo" name="cargo" required>
+                        </div>
+                    </div>
+                    <label for="mensagem" class="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" required></textarea>
-                    <input type="submit" value="Enviar">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" required/>
+                        <label for="checkbox">Eu aceito que a DevTeam armazene meus dados e concordo em receber futuras comunicações.</label>
+                    </div>
+                    <input type="submit" value="Enviar" class="button" id="button">
                 </form>
+                <div class="linha2"></div>
+                <h2 class="contato-title">Envie uma mensagem de <br> contato para a DevTeam</h2>
             </article>
         </section>
     </main>
-    <script src="src/js/script.js"></script>
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about-us">
+                <h3>Sobre a DevTeam</h3>
+                <p>Construímos soluções inovadoras para seu negócio, <br> com foco em qualidade e eficiência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links úteis</h3>
+                <ul class="links">
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Nos acompanhe</h3>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p>Email: contato@devteam.com</p>
+                <p>Telefone: +55 11 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevTeam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
