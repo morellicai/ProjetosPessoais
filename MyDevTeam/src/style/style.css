@@ -8,6 +8,7 @@
 html{
     background-color: black;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* Header */
 .header{
@@ -65,7 +66,7 @@ html{
 .listnav:hover{
     color: #4db8ff;
 }
-/* .listnav::before{
+/* .listnav::after{
     content "";
     position: absolute;
     width: 100%;
@@ -213,6 +214,19 @@ main{
     padding: 50px 0;
     background: radial-gradient(circle at top left, #0a2e5a, #121212);
     max-width: 1280px;
+}
+.servicess{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 30px;
+    background: radial-gradient(circle at top left, #0a2e5a, #121212);
+    width: 80%;
+    height: 90%;
 }
 .servicos{
     display: flex;
@@ -367,14 +381,13 @@ main{
 }
 .devs-title{
     font-size: 2.5rem;
-    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
     width: auto;
     padding: 30px 50px;
     text-align: center;
     color: #eee;
-    margin: 30px;
+    margin: 10px 30px 30px 30px;
 }
 .equipe{
     display: flex;

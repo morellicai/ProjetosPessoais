@@ -89,7 +89,6 @@ const elements = document.querySelectorAll('.main');
 console.log(elements)
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -102,7 +101,6 @@ elements.forEach((element) => {
     myObserver.observe(element);
 });
 
-
 // Sobrescrita do formulário
 const form = document.getElementById('form');
 form.addEventListener('submit', (event) => {
@@ -112,7 +110,7 @@ form.addEventListener('submit', (event) => {
 });
 
 const hero = document.getElementById('hero-text');
-const sla = new IntersectionObserver((entries) => {
+const heroOpened = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
@@ -121,4 +119,4 @@ const sla = new IntersectionObserver((entries) => {
         }
     });
 });
-sla.observe(hero);
+heroOpened.observe(hero);
